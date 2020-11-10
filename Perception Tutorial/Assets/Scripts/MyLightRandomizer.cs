@@ -1,9 +1,11 @@
 using System;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Experimental.Perception.Randomization.Parameters;
 using UnityEngine.Experimental.Perception.Randomization.Randomizers;
 
 [Serializable]
+
 [AddRandomizerMenu("Perception/My Light Randomizer")]
 public class MyLightRandomizer : Randomizer
 {
@@ -27,5 +29,21 @@ public class MyLightRandomizer : Randomizer
                 tag.SetIntensity(lightIntensityParameter.Sample());
             }
         }
+        
+        taggedObjects = tagManager.Query<MyLightSwitcherTag>();
+        foreach (var taggedObject in taggedObjects)
+        {
+            var tag = taggedObject.GetComponent<MyLightSwitcherTag>();
+            if (tag)
+            {
+                tag.Act(lightIntensityParameter.Sample());
+            }
+        }
     }
+    //
+    // [MenuItem("Window/Perception Asset Manager")]
+    // public static void Temporary()
+    // {
+    //     string path = AssetDatabase.GetAssetPath (Selection.activeObject);   
+    // }
 }

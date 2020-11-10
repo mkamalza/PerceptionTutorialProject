@@ -25,11 +25,11 @@ MonoBehaviour:
     color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - label: drink_whippingcream_lucerne
     color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  - label: lotion_essentially_nivea
-    color: {r: 0.0923782, g: 1, b: 0.9764286, a: 1}
   - label: pasta_lasagne_barilla
     color: {r: 1, g: 0.5453294, b: 0.33387327, a: 1}
   - label: snack_biscotti_ghiott
     color: {r: 0.76197046, g: 0.12644827, b: 1, a: 1}
   - label: snack_granolabar_naturevalley
     color: {r: 0.21838403, g: 0.37677932, b: 1, a: 1}
+  - label: lotion_essentially_nivea
+    color: {r: 1, g: 0.39392692, b: 0.43019935, a: 1}

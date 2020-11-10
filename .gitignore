@@ -1,2 +1,21 @@
 
 **/.DS_Store
+build/**
+.build_script/**
+node_modules/**
+**/Temp/**/*
+**/obj/**/*
+**/Library/**/*
+**/Logs/**
+**/.vscode/**
+**/.idea/**
+**/.vs/**
+**/Build/**
+**/Builds/**
+*.csproj
+*.sln
+.idea/
+.Editor/*
+./UserSettings/**
+Perception Tutorial/Unity.Perception.Editor.csproj.DotSettings
+Perception Tutorial/UserSettings/EditorUserSettings.asset
